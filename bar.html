@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="all.min.css">
+    <style>
+        body {
+            background-color: #141430;
+            margin: 0;
+            height: 90vh;
+            position: relative;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .header .top {
+            display: flex;
+            justify-content: flex-end;
+            padding: 2rem;
+        }
+
+        .header .nav1 {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #939393;
+            font-size: 1.5rem;
+        }
+
+        .nav1 .container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        i {
+            font-weight: normal;
+        }
+
+        .dropdown {
+            /*this makes the item in dropdown not appear on the page*/
+            display: none;
+            /*other properties*/
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 150px;
+        }
+
+        .dropdown a {
+            color: white;
+            padding: 0.5rem 1rem;
+        }
+
+        .main-menu:hover .dropdown{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!--X-Mark-->
+        <div class="top">
+            <a href="/"><i class="fa-regular fa-circle-xmark fa-3x"></i></a>
+        </div>
+        <!--navigation buttons-->
+        <div class="centered">
+            <div class="nav1">
+                <i class="fa-solid fa-utensil-spoon brand-logo fa-4x" style="color: #939393; vertical-align: middle;"></i>
+                <nav class="container">
+                    <a href="index.html">Home</a>
+                    <a class="main-menu" href="menu">Menu</a>
+                        <div class="dropdown">
+                            <a href="/">Starters</a>
+                            <a href="/">Main Course</a>
+                            <a href="/">Desert</a>
+                        </div>
+                    <a href="about">A & N</a>
+                    <a href="contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
