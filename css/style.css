@@ -1,11 +1,12 @@
 body {
     margin: 0;
+    height: 2000px;
 }
-.header .container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
     background-color: whitesmoke;
     margin-top: 0;
     padding: 2rem;
@@ -16,7 +17,7 @@ body {
     z-index: 1000;
 }
 
-.header .container .logo {
+.nav-container .logo {
     flex: 1;
     font-size: 4rem;
 }

@@ -48,25 +48,23 @@
             font-weight: normal;
         }
 
-        .dropdown {
-            /*this makes the item in dropdown not appear on the page*/
-            display: none;
+        .dropdown{
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;;
             /*other properties*/
             position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #444;
-            min-width: 150px;
         }
 
-        .dropdown a {
-            color: white;
-            padding: 0.5rem 1rem;
+        .dropdown:hover .dropdown-content {
+            display: inline;
+            margin-left: 1.5rem;
+
         }
 
-        .main-menu:hover .dropdown{
-            display: block;
-        }
+        
 
         
     </style>
@@ -82,13 +80,15 @@
             <div class="nav1">
                 <i class="fa-solid fa-utensil-spoon brand-logo fa-4x" style="color: #939393; vertical-align: middle;"></i>
                 <nav class="container">
-                    <a href="index.html">Home</a>
-                    <a class="main-menu" href="menu">Menu</a>
-                        <div class="dropdown">
+                    <a href="/index.html">Home</a>
+                    <div class="menu dropdown">
+                        <a href="menu">Menu</a>
+                        <div class="dropdown-content">
                             <a href="/">Starters</a>
                             <a href="/">Main Course</a>
                             <a href="/">Desert</a>
                         </div>
+                    </div>                        
                     <a href="about">A & N</a>
                     <a href="contact">Contact</a>
                 </nav>

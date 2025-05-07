@@ -9,32 +9,33 @@
         <link rel="stylesheet" href="css/all.min.css">
         <style>
             .header .hero-img {
-                height: auto;
+                height: 75vh;
                 width: 100vw;
                 flex: 0 1 0;
                 opacity: 1;
+                object-fit: cover;
                 position:absolute;
+                margin-top: -15vh;
             }
         </style>
     </head>
     <body>
+        <!--starting of navigation bar space-->
+        <div class="nav-container">
+            <!--company logo-->
+            <div class="logo">
+                <!--fa-solid is a class prefixes used for most UI icons-->
+                <i class="fa-solid fa-utensil-spoon fa-spin brand-logo" style="color: #939393;"></i>
+            </div>
+            <!--navigation bar-->
+            <div class="nav-bar">
+                <a href="html-files/bar.html">
+                    <i class="fa-solid fa-bars" style="color: #939393; font-size: 3rem;"></i>
+                </a>
+            </div>
+        </div>
         <div class="header">
             <img class="hero-img" src="images/restaurant-5509577.jpg">
-            <!--starting of navigation bar space-->
-            <div class="container">
-                <!--company logo-->
-                <div class="logo">
-                    <!--fa-solid is a class prefixes used for most UI icons-->
-                    <i class="fa-solid fa-utensil-spoon fa-spin brand-logo" style="color: #939393;"></i>
-                </div>
-                <!--navigation bar-->
-                <div class="nav-bar">
-                    <a href="html-files/bar.html">
-                        <i class="fa-solid fa-bars" style="color: #939393; font-size: 3rem;"></i>
-                    </a>
-                </div>
-                
-            </div>
         </div>
 
     </body>
