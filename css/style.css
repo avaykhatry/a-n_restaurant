@@ -8,10 +8,9 @@ body {
     align-items: center;
     height: 10vh;
     background-color: whitesmoke;
-    margin-top: 0;
     padding: 2rem;
     box-sizing: border-box;
-    opacity: 0.5;
+    opacity: 0.6;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -22,6 +21,33 @@ body {
     font-size: 4rem;
 }
 
+.header {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+}
+
 .main-content {
-    margin-top: 100vh;
+    background-color: #f9f9f9;
+    margin-top: -10vh;
+    display: flex;
+}
+
+.main-content .order-menu{
+    flex: 1;
+    min-width: 20vw;
+}
+
+.main-content .small-image{
+    flex: 1;
+    min-width: 20vw;
+}
+
+.main-content .menu{
+    flex: 1;
+    min-width: 20vw;
+}
+
+.main-content .big-image{
+    flex: 3;
 }
