@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    opacity: 0.5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container .logo {
+    flex: 1;
+    font-size: 4rem;
+}
