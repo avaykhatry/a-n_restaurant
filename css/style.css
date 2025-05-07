@@ -21,3 +21,7 @@ body {
     flex: 1;
     font-size: 4rem;
 }
+
+.main-content {
+    margin-top: 100vh;
+}
