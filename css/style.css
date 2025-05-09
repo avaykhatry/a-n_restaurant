@@ -29,25 +29,153 @@ body {
 
 .main-content {
     background-color: #f9f9f9;
-    margin-top: -10vh;
+    margin-top: -12vh;
+    display: flex;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.main-content .order-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 197, 197);
+    min-width: clamp(10rem, 12vw, 15rem);
+}
+
+.main-content .small-image {
+    flex: 1;
+    min-width: clamp(10rem, 12vw, 15rem);
+
+}
+
+.main-content .menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #53829c;
+    min-width: clamp(10rem, 12vw, 15rem);
+}
+
+.main-content .big-image {
+    flex: 2;
+}
+
+.main-content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content .order-menu .round-button{
+    background-color: rgb(40, 40, 117);
+    color: #f9f9f9;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.main-content .order-menu .round-button:hover {
+    cursor: pointer;
+}
+
+.main-content .menu a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/* Starting of ABOUT . A & N'S */
+
+.about-section-1 {
+    display: flex;    
+}
+
+.about-section-1 div{
+    height: clamp(15rem, 15vh, 20rem);
+    background-color: rgb(19, 89, 77);
+    flex: 2 1 0%;
+}
+
+.about-section-1 div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.about-section-1 .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-1 .info a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.about-section-1 .small-image {
+    flex: 1 1 0%;
+}
+
+/* Ending of ABOUT . A & N'S */
+
+/*Starting of CONTACT & LOCATION*/
+.contact-location {
     display: flex;
 }
 
-.main-content .order-menu{
-    flex: 1;
-    min-width: 20vw;
+.contact-location div {
+    height: clamp(15rem, 18vh, 20rem);
+    flex: 1 1 0;
+    background-color: whitesmoke;
 }
 
-.main-content .small-image{
-    flex: 1;
-    min-width: 20vw;
+.contact-location .contact-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-content .menu{
-    flex: 1;
-    min-width: 20vw;
+.contact-location div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.main-content .big-image{
-    flex: 3;
+.contact-link a {
+    text-decoration: none;
+    color: rgb(35, 35, 33);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Starting of Our-Story section */
+
+.our-story {
+    box-sizing: border-box;
+    background-color: #53829c;
+    width: 100vw;
+    text-align: end;
+    padding: 3.5rem 30%;
+}
+
+.our-story .header {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.our-story .story-page a {
+    text-decoration: none;
+    color: #f9f9f9;
 }
