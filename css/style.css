@@ -17,8 +17,14 @@ body {
 }
 
 .nav-container .logo {
-    flex: 1;
-    font-size: 4rem;
+    box-sizing: border-box;
+}
+
+.nav-container .logo img {
+    width: 10rem;
+    height: auto;
+    margin-left: -3rem;
+    margin-top: 1.5rem;
 }
 
 .header {
@@ -160,7 +166,7 @@ body {
     text-align: center;
 }
 
-/* Starting of Our-Story section */
+/* Start of Our-Story section */
 
 .our-story {
     box-sizing: border-box;
@@ -170,18 +176,18 @@ body {
     padding: 3.5rem 30%;
 }
 
-.our-story .header {
+.our-story .story-header {
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .our-story .story-page a {
     text-decoration: none;
     color: #f9f9f9;
 }
-/* Ending of Our-Story section */
+/* End of Our-Story section */
 
-/* Starting of Footer */
+/* Start of Footer */
 .footer-section {
     background-color: #f5f5f5;
     display: flex;
@@ -198,7 +204,7 @@ body {
     line-height: 4rem;
 }
 
-.footer-section .container .contact-details button {
+.footer-section .container .contact-details .contact-num1, .contact-num2 {
     margin-bottom: 1rem;
     padding: 0.4rem 2rem;
     font-size: 1.1rem;
@@ -237,3 +243,4 @@ body {
 .footer-section footer{
     padding-bottom: 1.8rem;
 }
+/* End of footer */
